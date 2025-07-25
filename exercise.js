@@ -31,10 +31,21 @@
 // Crea un oggetto chiamato persona con tre proprietà: nome, eta, professione
 // Poi, stampa solo il nome della persona
 
-const persona = {
-    nome: "Gianpietro",
-    eta: 56,
-    professione: "Autista"
+{
+    const persona = {
+        nome: "Gianpietro",
+        eta: 56,
+        professione: "Autista"
+    }
+
+    console.log(persona.nome);
+
 }
 
-console.log(persona.nome);
+// Dato un array di numeri, crea un nuovo array con ogni numero moltiplicato per 2.
+
+{
+    const numeri = [2, 3, 4, 5, 6];
+    const numeriMolt = numeri.map(numero => numero * 2);
+    console.log(numeriMolt);
+}

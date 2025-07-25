@@ -97,3 +97,37 @@
     console.log(som);
 
 }
+
+// Hai un array di oggetti, ognuno con un nome e un’età.
+// Scrivi un algoritmo che trovi la persona più anziana (cioè con l’età più alta) e stampi il suo nome.
+
+{
+    const persone = [
+        {
+            name: "Paolo",
+            eta: 40
+        },
+        {
+            nome: "Sara",
+            eta: 28
+        },
+        {
+            nome: "Gianni",
+            eta: 51
+        }
+    ];
+
+    let personaGrande = persone[0]
+
+    for (let i = 0; i < persone.length; i++) {
+        if (persone[i].eta > personaGrande.eta) {
+            personaGrande = persone[i]
+        }
+
+
+    }
+
+    console.log(personaGrande.nome);
+
+
+}

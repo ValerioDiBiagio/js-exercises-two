@@ -58,3 +58,27 @@
     console.log(numeriPari);
 
 }
+
+// Hai un array di oggetti, ognuno con un nome e un’età.
+// Devi creare un nuovo array che contiene solo i nomi.
+
+{
+    const persone = [
+        {
+            nome: "Mauro",
+            eta: 45
+        },
+        {
+            nome: "Stefano",
+            eta: 23
+        },
+        {
+            nome: "Simone",
+            eta: 35
+        }
+    ]
+
+    const soloNomi = persone.map(persona => persona.nome);
+    console.log(soloNomi);
+
+}

@@ -49,3 +49,12 @@
     const numeriMolt = numeri.map(numero => numero * 2);
     console.log(numeriMolt);
 }
+
+// Usa .filter() per ottenere un nuovo array contenente solo i numeri pari da un array di numeri.
+
+{
+    const numeri = [10, 15, 20, 25, 30];
+    const numeriPari = numeri.filter(numero => numero % 2 === 0);
+    console.log(numeriPari);
+
+}

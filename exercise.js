@@ -90,8 +90,8 @@
 
     let som = 0;
 
-    for (let i = 0; i <= numeri.length; i++) {
-        som += i;
+    for (let i = 0; i < numeri.length; i++) {
+        som += numeri[i];
     }
 
     console.log(som);

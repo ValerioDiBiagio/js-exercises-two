@@ -28,3 +28,13 @@
     console.log(colori.length);
 }
 
+// Crea un oggetto chiamato persona con tre proprietà: nome, eta, professione
+// Poi, stampa solo il nome della persona
+
+const persona = {
+    nome: "Gianpietro",
+    eta: 56,
+    professione: "Autista"
+}
+
+console.log(persona.nome);

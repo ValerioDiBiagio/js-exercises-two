@@ -82,3 +82,18 @@
     console.log(soloNomi);
 
 }
+
+// Dato un array di numeri, usa un ciclo for per calcolare e stampare la somma totale di tutti i valori.
+
+{
+    const numeri = [1, 2, 3, 4, 5];
+
+    let som = 0;
+
+    for (let i = 0; i <= numeri.length; i++) {
+        som += i;
+    }
+
+    console.log(som);
+
+}

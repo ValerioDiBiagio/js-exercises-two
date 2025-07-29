@@ -168,3 +168,18 @@
     console.log(somma(5, 5));
 
 }
+
+
+// Tabellina del 7
+// Scrivi un ciclo for che stampi la tabellina del 7, dalla moltiplicazione per 1 fino a 10.
+// Esempio output:
+// 7 x 1 = 7
+// 7 x 2 = 14...
+// 7 x 10 = 70
+
+{
+    for (let i = 1; i <= 10; i++) {
+        console.log(`7 x ${i} =  ${7 * i}`)
+
+    }
+}

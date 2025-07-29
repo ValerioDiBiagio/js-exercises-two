@@ -183,3 +183,18 @@
 
     }
 }
+
+// Funzione isPari(numero)
+//    Scrivi una funzione che ritorni true se il numero passato è pari, altrimenti false.
+
+{
+    function isPari(numero) {
+        if (numero % 2 === 0) {
+            return true;
+        } else if (numero % 2 !== 0) {
+            return false;
+
+        }
+    }
+    console.log(isPari(2));
+}

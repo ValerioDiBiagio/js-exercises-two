@@ -215,3 +215,13 @@
     console.log(media(array));
 
 }
+
+// Filtra numeri pari
+// Usa .filter() per creare un nuovo array che contenga solo i numeri pari di un array di partenza.
+
+{
+    const numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+    const numeriPari = numeri.filter(numero => numero % 2 === 0)
+    console.log(numeriPari);
+}

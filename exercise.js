@@ -145,3 +145,14 @@
     console.log(som)
 }
 
+// Numeri pari da 1 a 50
+// Scrivi un ciclo for che stampi solo i numeri pari compresi tra 1 e 50.
+
+{
+    for (let i = 1; i <= 50; i++) {
+        if (i % 2 === 0) {
+            console.log(i)
+        }
+
+    }
+}

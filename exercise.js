@@ -245,3 +245,17 @@
     console.log(numeriSom);
 
 }
+
+// Oggetto persona
+// Crea un oggetto chiamato persona con le proprietà: nome, cognome, eta.
+// Stampa una frase come: "Ciao, mi chiamo Mario Rossi e ho 30 anni".
+
+{
+    const persona = {
+        nome: "Fausto",
+        cognome: "Bianchi",
+        eta: 54
+    }
+
+    console.log(`Ciao, mi chiamo ${persona.nome} ${persona.cognome} e ho ${persona.eta} anni`);
+}

@@ -220,8 +220,18 @@
 // Usa .filter() per creare un nuovo array che contenga solo i numeri pari di un array di partenza.
 
 {
-    const numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    const numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-    const numeriPari = numeri.filter(numero => numero % 2 === 0)
+    const numeriPari = numeri.filter(numero => numero % 2 === 0);
     console.log(numeriPari);
+}
+
+// Moltiplica per 2 ogni elemento
+// Usa .map() per creare un nuovo array in cui ogni elemento è il doppio di quello originale.
+
+{
+    const numeri = [2, 4, 6, 8, 10];
+
+    const numeriMolt = numeri.map(numero => numero * 2);
+    console.log(numeriMolt);
 }

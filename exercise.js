@@ -259,3 +259,21 @@
 
     console.log(`Ciao, mi chiamo ${persona.nome} ${persona.cognome} e ho ${persona.eta} anni`);
 }
+
+// Filtro utenti maggiorenni
+// Dato un array di oggetti con nome ed eta, usa .filter() per ottenere un nuovo array con solo gli utenti maggiorenni.
+
+{
+
+    const utenti = [
+        { nome: "Alice", eta: 25 },
+        { nome: "Bob", eta: 17 },
+        { nome: "Carla", eta: 30 }
+    ];
+
+    const utentiMagg = utenti.filter(utente => utente.eta > 18)
+    console.log(utentiMagg);
+
+}
+
+

@@ -276,4 +276,22 @@
 
 }
 
+// Cerca utente per nome (con .find())
+// Hai un array di oggetti con nome ed email.
+// Scrivi una funzione trovaUtente(nome) che ritorni l'oggetto utente con quel nome usando .find().
+
+{
+    const utenti = [
+        { nome: "Lucia", email: "lucia@example.com" },
+        { nome: "Giovanni", email: "giovanni@example.com" },
+        { nome: "Laura", email: "laura@example.com" }
+    ];
+
+
+    function trovaUtente(nome) {
+        return utenti.find(utente => utente.nome === nome)
+    }
+
+    console.log(trovaUtente("Giovanni"));
+}
 

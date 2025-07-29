@@ -156,3 +156,15 @@
 
     }
 }
+
+// Funzione somma(a, b)
+// Crea una funzione che accetta due numeri come parametri e restituisce la loro somma.
+
+{
+    function somma(a, b) {
+        return a + b;
+    }
+
+    console.log(somma(5, 5));
+
+}

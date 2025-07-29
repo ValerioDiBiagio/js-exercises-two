@@ -198,3 +198,20 @@
     }
     console.log(isPari(2));
 }
+
+// Funzione media(array)
+// Crea una funzione che prende in input un array di numeri e ritorna la media aritmetica.
+
+{
+    function media(array) {
+        let somma = 0;
+        for (let i = 0; i < array.length; i++) {
+            somma += array[i]
+        }
+        return somma / array.length
+    }
+
+    const array = [2, 4, 6, 8, 10];
+    console.log(media(array));
+
+}

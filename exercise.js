@@ -235,3 +235,13 @@
     const numeriMolt = numeri.map(numero => numero * 2);
     console.log(numeriMolt);
 }
+
+// Somma tutti gli elementi
+//  Usa .reduce() per calcolare la somma di tutti gli elementi in un array numerico.
+
+{
+    const numeri = [20, 25, 30, 35];
+    const numeriSom = numeri.reduce((tot, valore) => (tot + valore));
+    console.log(numeriSom);
+
+}

@@ -312,3 +312,31 @@
     console.log(numeriSom);
 
 }
+
+
+// Dato un array di oggetti prodotto con proprietà nome e prezzo, restituisci solo i prodotti con prezzo superiore a 50.
+
+{
+
+    const prodotto = [
+        {
+            nome: "Monitor",
+            prezzo: 150
+
+        },
+        {
+            nome: "Tv",
+            prezzo: 550
+
+        },
+        {
+            nome: "Stereo",
+            prezzo: 30
+
+        }
+    ]
+
+    const prodottiCostosi = prodotto.filter(prod => prod.prezzo > 50);
+    console.log(prodottiCostosi);
+
+}

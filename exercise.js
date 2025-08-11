@@ -295,3 +295,11 @@
     console.log(trovaUtente("Giovanni"));
 }
 
+// Dato un array di numeri, crea un nuovo array che contenga solo i numeri pari usando .filter()
+
+{
+    const numeri = [1, 2, 3, 4, 5, 6];
+    const numeriPari = numeri.filter(numero => numero % 2 === 0);
+    console.log(numeriPari);
+
+}

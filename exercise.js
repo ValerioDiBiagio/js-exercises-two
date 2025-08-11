@@ -303,3 +303,12 @@
     console.log(numeriPari);
 
 }
+
+// Usando .reduce(), calcola la somma di tutti i numeri dell'array.
+
+{
+    const numeri = [1, 2, 3, 4, 5, 6];
+    const numeriSom = numeri.reduce((tot, valore) => (tot + valore));
+    console.log(numeriSom);
+
+}

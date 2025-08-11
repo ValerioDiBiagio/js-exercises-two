@@ -340,3 +340,18 @@
     console.log(prodottiCostosi);
 
 }
+
+// Usando .map(), crea un array contenente solo i nomi dei prodotti.
+
+
+{
+    const prodotti = [
+        { nome: "Maglietta", prezzo: 20 },
+        { nome: "Pantaloni", prezzo: 60 },
+        { nome: "Scarpe", prezzo: 100 }
+    ];
+
+    const nomiProd = prodotti.map(prodotto => prodotto.nome);
+    console.log(nomiProd);
+
+}

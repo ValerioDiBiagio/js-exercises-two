@@ -308,7 +308,7 @@
 
 {
     const numeri = [1, 2, 3, 4, 5, 6];
-    const numeriSom = numeri.reduce((tot, valore) => (tot + valore));
+    const numeriSom = numeri.reduce((tot, valore) => (tot + valore), 0);
     console.log(numeriSom);
 
 }
@@ -353,5 +353,19 @@
 
     const nomiProd = prodotti.map(prodotto => prodotto.nome);
     console.log(nomiProd);
+
+}
+
+// Usando .reduce(), calcola la somma dei prezzi di tutti i prodotti.
+
+{
+    const prodotti = [
+        { nome: "Maglietta", prezzo: 20 },
+        { nome: "Pantaloni", prezzo: 60 },
+        { nome: "Scarpe", prezzo: 100 }
+    ];
+
+    const prodPrezzi = prodotti.reduce((tot, prodotti) => (tot + prodotti.prezzo), 0);
+    console.log(prodPrezzi);
 
 }

@@ -545,4 +545,23 @@
 
 }
 
+// Partendo da un array di oggetti che rappresentano studenti, usa il metodo filter() per ottenere solo gli studenti che hanno superato l'esame (voto >= 60). 
+// Successivamente, usa il metodo map() sul risultato per creare un nuovo array contenente solo i nomi di questi studenti.
+
+{
+    const studenti = [
+        { nome: 'Luca', voto: 85 },
+        { nome: 'Giulia', voto: 55 },
+        { nome: 'Marco', voto: 72 },
+        { nome: 'Anna', voto: 91 },
+        { nome: 'Paolo', voto: 48 }
+    ];
+
+    const esameSuperato = studenti.filter(studente => studente.voto > 60);
+    console.log(esameSuperato);
+
+    const NomeUtentiEsameSuperato = esameSuperato.map(studente => studente.nome);
+    console.log(NomeUtentiEsameSuperato);
+}
+
 

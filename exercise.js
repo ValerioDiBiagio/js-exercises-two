@@ -480,3 +480,16 @@
     console.log(utentiId(utenti, 3));
 
 }
+
+// Scrivi una funzione che, dato un array di numeri e un valore da rimuovere, restituisce un nuovo array senza tutte le occorrenze di quel valore.
+
+{
+    const numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    function rimuoviNum(arr, valoreRim) {
+        return valoreDaRimuovere = arr.filter(numero => numero !== valoreRim);
+    }
+
+    console.log(rimuoviNum(numeri, 2));
+
+}

@@ -419,3 +419,31 @@
     console.log(prodottiCostosi);
 
 }
+
+
+// Partendo dall'array di prodotti dell'esercizio precedente, crea un nuovo array contenente solo i nomi dei prodotti.
+
+{
+    const prodotti = [
+        {
+            nome: "Penna",
+            prezzo: 5
+        },
+        {
+            nome: "Radio",
+            prezzo: 25
+        },
+        {
+            nome: "Sedia",
+            prezzo: 60
+        },
+        {
+            nome: "Matita",
+            prezzo: 2
+        },
+    ];
+
+    const nomeProd = prodotti.map(prodotto => prodotto.nome);
+    console.log(nomeProd);
+
+}

@@ -493,3 +493,20 @@
     console.log(rimuoviNum(numeri, 2));
 
 }
+
+// Scrivi un ciclo for che itera da 1 a 20 e calcola la somma di tutti i numeri pari.
+
+{
+    let sommaPari = 0;
+
+    for (let i = 1; i <= 20; i++) {
+        if (i % 2 === 0) {
+            sommaPari += i
+        }
+
+    }
+
+    console.log(sommaPari);
+
+}
+

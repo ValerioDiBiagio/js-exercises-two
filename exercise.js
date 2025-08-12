@@ -510,3 +510,22 @@
 
 }
 
+// Scrivi un ciclo for che, data una stringa e un carattere, conti quante volte quel carattere appare nella stringa. 
+// La funzione dovrà restituire il conteggio.
+
+{
+    const stringa = "Ciao, mi chiamo Luca";
+    const carattere = "a";
+
+    let conteggio = 0;
+
+    for (let i = 0; i < stringa.length; i++) {
+        if (stringa[i] === carattere) {
+            conteggio++;
+        }
+    }
+
+    console.log(carattere, conteggio)
+
+}
+

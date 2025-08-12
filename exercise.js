@@ -564,4 +564,16 @@
     console.log(NomeUtentiEsameSuperato);
 }
 
+// Dato un array di prezzi, usa il metodo reduce() per calcolare il costo totale di tutti gli articoli.
+
+{
+    const prezzi = [12.99, 5.50, 24.00, 8.75];
+
+    const constoTot = prezzi.reduce((tot, prezzo) => tot + prezzo);
+    console.log(constoTot);
+
+}
+
+
+
 

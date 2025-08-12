@@ -447,3 +447,36 @@
     console.log(nomeProd);
 
 }
+
+
+// Scrivi una funzione che, dato un array di oggetti utenti e un id, restituisce l'oggetto utente corrispondente a quell'id. 
+// Se l'utente non viene trovato, restituisce null.
+
+{
+    const utenti = [
+        {
+            nome: "Luca",
+            id: 1
+        },
+        {
+            nome: "Marco",
+            id: 2
+        },
+        {
+            nome: "Stefano",
+            id: 3
+        },
+        {
+            nome: "Mattia",
+            id: 4
+        },
+    ];
+
+    function utentiId(arr, idCercato) {
+        const utenteTrovato = arr.find(utente => utente.id === idCercato);
+        return utenteTrovato || null
+    }
+
+    console.log(utentiId(utenti, 3));
+
+}

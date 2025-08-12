@@ -391,3 +391,31 @@
     console.log(sumArray(numeri));
 
 }
+
+
+// Hai un array di oggetti che rappresentano dei prodotti. Filtra l'array per ottenere solo i prodotti il cui prezzo è superiore a 20.
+
+{
+    const prodotti = [
+        {
+            nome: "Penna",
+            prezzo: 5
+        },
+        {
+            nome: "Radio",
+            prezzo: 25
+        },
+        {
+            nome: "Sedia",
+            prezzo: 60
+        },
+        {
+            nome: "Matita",
+            prezzo: 2
+        },
+    ];
+
+    const prodottiCostosi = prodotti.filter(prodotto => prodotto.prezzo > 20);
+    console.log(prodottiCostosi);
+
+}

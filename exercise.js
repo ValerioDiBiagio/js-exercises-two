@@ -569,8 +569,8 @@
 {
     const prezzi = [12.99, 5.50, 24.00, 8.75];
 
-    const constoTot = prezzi.reduce((tot, prezzo) => tot + prezzo);
-    console.log(constoTot);
+    const costoTot = prezzi.reduce((tot, prezzo) => tot + prezzo);
+    console.log(costoTot);
 
 }
 

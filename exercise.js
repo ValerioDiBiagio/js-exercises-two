@@ -758,3 +758,19 @@
     console.log(studentiVotoAlto);
 
 }
+
+// Filtra e mappa per ottenere i titoli dei libri pubblicati dopo il 2000.
+
+{
+    const libri = [
+        { titolo: 'Il Signore degli Anelli', anno: 1954 },
+        { titolo: 'Harry Potter e la Pietra Filosofale', anno: 1997 },
+        { titolo: 'Il Codice Da Vinci', anno: 2003 },
+        { titolo: 'Twilight', anno: 2005 },
+        { titolo: '1984', anno: 1949 }
+    ];
+
+    const libriPubbDopo2000 = libri.filter(libro => libro.anno > 2000).map(libro => libro.titolo);
+    console.log(libriPubbDopo2000);
+
+}

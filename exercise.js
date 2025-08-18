@@ -615,6 +615,39 @@
     console.log(prodottiFiltrati);
 }
 
+// Usa il metodo reduce() per calcolare la somma totale dei prezzi di tutti i prodotti nell'array.
+
+{
+    const prodotti = [
+        {
+            nome: "Telefono",
+            prezzo: 450
+        },
+        {
+            nome: "Stereo",
+            prezzo: 150
+        },
+        {
+            nome: "Aspirapolvere",
+            prezzo: 250
+        },
+        {
+            nome: "Caricatore",
+            prezzo: 20
+        },
+        {
+            nome: "Videogioco",
+            prezzo: 40
+        },
+    ]
+
+    const sommaProd = prodotti.reduce((tot, prodotti) => (tot + prodotti.prezzo), 0);
+    console.log(sommaProd);
+
+}
+
+
+
 
 
 

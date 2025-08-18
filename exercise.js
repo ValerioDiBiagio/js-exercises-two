@@ -608,7 +608,7 @@
         {
             nome: "Videogioco",
             prezzo: 40
-        },
+        }
     ]
 
     const prodottiFiltrati = prodotti.filter(prodotto => prodotto.prezzo > 50);
@@ -638,7 +638,7 @@
         {
             nome: "Videogioco",
             prezzo: 40
-        },
+        }
     ]
 
     const sommaProd = prodotti.reduce((tot, prodotti) => (tot + prodotti.prezzo), 0);
@@ -646,7 +646,32 @@
 
 }
 
+//  Usa il metodo find() per trovare l'oggetto utente che ha l'ID 3.
 
+{
+    const utenti = [
+        {
+            nome: "Susanna",
+            id: 1
+        },
+        {
+            nome: "Marta",
+            id: 2
+        },
+        {
+            nome: "Sonia",
+            id: 3
+        },
+        {
+            nome: "Lucia",
+            id: 4
+        }
+    ]
+
+    const utentiFiltrati = utenti.filter(utente => utente.id === 3);
+    console.log(utentiFiltrati);
+
+}
 
 
 

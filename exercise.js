@@ -704,6 +704,17 @@
 
 }
 
+// Usa il metodo forEach() per scorrere l'array di nomi e stampare ogni nome nella console.
+
+{
+    const nomi = ['Mario', 'Luigi', 'Sara', 'Alessia'];
+
+
+    nomi.forEach(function (indice) {
+        console.log(indice);
+    });
+}
+
 
 
 

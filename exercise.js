@@ -673,6 +673,37 @@
 
 }
 
+//  Usa il metodo sort() per ordinare l'array di prodotti in base al prezzo, dal più economico al più costoso.
+
+{
+    const prodotti = [
+        {
+            nome: "Telefono",
+            prezzo: 450
+        },
+        {
+            nome: "Stereo",
+            prezzo: 150
+        },
+        {
+            nome: "Aspirapolvere",
+            prezzo: 250
+        },
+        {
+            nome: "Caricatore",
+            prezzo: 20
+        },
+        {
+            nome: "Videogioco",
+            prezzo: 40
+        }
+    ]
+
+    prodotti.sort((a, b) => a.prezzo - b.prezzo);
+    console.log(prodotti);
+
+}
+
 
 
 

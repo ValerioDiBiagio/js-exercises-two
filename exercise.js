@@ -716,5 +716,13 @@
 }
 
 
+// Usa join() per trasformare l'array in una stringa separata da spazi.
+
+{
+    const parole = ["Ciao", "mi chiamo", "Valerio"];
+    const frase = parole.join(" ");
+    console.log(frase);
+}
+
 
 

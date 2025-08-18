@@ -724,5 +724,13 @@
     console.log(frase);
 }
 
+// Usa includes() per controllare se 'arancia' è presente.
+
+{
+    const frutta = ["mela", "pesca", "arancia", "pera"];
+    const fruttaInclusa = frutta.includes("arancia");
+    console.log(fruttaInclusa);
+}
+
 
 

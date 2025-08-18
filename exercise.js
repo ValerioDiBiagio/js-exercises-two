@@ -585,6 +585,36 @@
 
 }
 
+//  Usa il metodo filter() per creare un nuovo array contenente solo i prodotti il cui prezzo è superiore a 50.
+
+{
+    const prodotti = [
+        {
+            nome: "Telefono",
+            prezzo: 450
+        },
+        {
+            nome: "Stereo",
+            prezzo: 150
+        },
+        {
+            nome: "Aspirapolvere",
+            prezzo: 250
+        },
+        {
+            nome: "Caricatore",
+            prezzo: 20
+        },
+        {
+            nome: "Videogioco",
+            prezzo: 40
+        },
+    ]
+
+    const prodottiFiltrati = prodotti.filter(prodotto => prodotto.prezzo > 50);
+    console.log(prodottiFiltrati);
+}
+
 
 
 

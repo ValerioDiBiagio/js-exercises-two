@@ -732,5 +732,29 @@
     console.log(fruttaInclusa);
 }
 
+// Usa some() per trovare uno studente con punteggio ≥ 90.
 
+{
+    const studenti = [
+        {
+            nome: "Susanna",
+            punteggio: 100
+        },
+        {
+            nome: "Marta",
+            punteggio: 78
+        },
+        {
+            nome: "Sonia",
+            punteggio: 93
+        },
+        {
+            nome: "Lucia",
+            punteggio: 84
+        }
+    ]
 
+    const studentiVotoAlto = studenti.some(studente => studente.punteggio >= 90);
+    console.log(studentiVotoAlto);
+
+}

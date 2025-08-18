@@ -574,6 +574,17 @@
 
 }
 
+//  Usa il metodo map() per creare un nuovo array in cui ogni numero dell'array originale è stato moltiplicato per 2.
+
+
+{
+    const numeri = [2, 4, 6, 8, 10];
+
+    const numeriDoppi = numeri.map(numero => numero * 2);
+    console.log(numeriDoppi);
+
+}
+
 
 
 

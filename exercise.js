@@ -810,3 +810,13 @@
 
     numeri.forEach(numero => console.log(`${numero} è un numero`));
 }
+
+// Usa reduce per calcolare la somma di tutti i numeri
+
+{
+    const numeri = [10, 20, 30];
+
+    const sommNum = numeri.reduce((tot, valore) => tot + valore);
+    console.log(sommNum);
+
+}

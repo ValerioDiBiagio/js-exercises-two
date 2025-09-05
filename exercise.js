@@ -838,3 +838,12 @@
     const numAlQuadrato = numeri.map(numero => numero * numero);
     console.log(numAlQuadrato);
 }
+
+// Dato un array di parole ["cane", "gatto", "uccello"], usa map()  per creare un nuovo array aggiungendo un "!" alla fine di ogni parola.
+
+{
+    const parole = ["cane", "gatto", "uccello"];
+
+    const paroleEsclamate = parole.map(parola => parola + '!');
+    console.log(paroleEsclamate);
+}

@@ -784,3 +784,12 @@
     console.log(numeriMolt)
 
 }
+
+//  Crea un nuovo array che contiene solo i numeri maggiori di 20.
+
+{
+    const numeri = [4, 2, 56, 41, 22, 10, 18];
+
+    const numeriMaggVenti = numeri.filter(numero => numero > 20);
+    console.log(numeriMaggVenti);
+}

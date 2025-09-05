@@ -847,3 +847,12 @@
     const paroleEsclamate = parole.map(parola => parola + '!');
     console.log(paroleEsclamate);
 }
+
+// Dato un array di città ["Roma", "Milano", "Napoli"], usa map()  per creare un nuovo array contenente la lunghezza di ogni nome di città.
+
+{
+    const cities = ["Roma", "Milano", "Napoli"];
+
+    const lenghtCityNames = cities.map(city => city.length);
+    console.log(lenghtCityNames);
+}

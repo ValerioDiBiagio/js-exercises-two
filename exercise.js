@@ -802,3 +802,11 @@
     const numMaggDieci = numeri.find(numero => numero > 10);
     console.log(numMaggDieci);
 }
+
+// Usa forEach per stampare ogni numero seguito da " è un numero"
+
+{
+    const numeri = [1, 2, 3];
+
+    numeri.forEach(numero => console.log(`${numero} è un numero`));
+}

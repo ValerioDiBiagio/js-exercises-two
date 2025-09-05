@@ -774,3 +774,13 @@
     console.log(libriPubbDopo2000);
 
 }
+
+// Crea un nuovo array in cui ogni numero dell’array numeri è moltiplicato per 2.
+
+{
+    const numeri = [20, 40, 60, 80, 100];
+
+    const numeriMolt = numeri.map(numero => numero * 2);
+    console.log(numeriMolt)
+
+}

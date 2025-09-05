@@ -829,3 +829,12 @@
     const numIncluso = numeri.includes(7);
     console.log(numIncluso);
 }
+
+// Dato un array di numeri [2, 4, 6, 8], usa map() per creare un nuovo array  in cui ogni numero sia elevato al quadrato.
+
+{
+    const numeri = [2, 4, 6, 8];
+
+    const numAlQuadrato = numeri.map(numero => numero * numero);
+    console.log(numAlQuadrato);
+}

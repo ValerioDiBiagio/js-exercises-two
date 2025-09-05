@@ -820,3 +820,12 @@
     console.log(sommNum);
 
 }
+
+// Usa includes per verificare se l’array contiene il numero 7
+
+{
+    const numeri = [2, 4, 7, 11, 14];
+
+    const numIncluso = numeri.includes(7);
+    console.log(numIncluso);
+}

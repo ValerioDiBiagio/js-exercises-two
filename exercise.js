@@ -793,3 +793,12 @@
     const numeriMaggVenti = numeri.filter(numero => numero > 20);
     console.log(numeriMaggVenti);
 }
+
+// Usa find per ottenere il primo numero maggiore di 10
+
+{
+    const numeri = [3, 7, 10, 1, 6, 14, 5, 27, 15];
+
+    const numMaggDieci = numeri.find(numero => numero > 10);
+    console.log(numMaggDieci);
+}

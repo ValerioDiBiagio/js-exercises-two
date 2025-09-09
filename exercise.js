@@ -857,25 +857,6 @@
     console.log(lenghtCityNames);
 }
 
-// find: Trova lo studente che ha 22 anni.
-
-// find: Trova il primo studente che frequenta "Informatica".
-
-// filter: Crea un array con tutti gli studenti di età maggiore o uguale a 21.
-
-// filter: Seleziona solo gli studenti che hanno almeno un 30 nei voti.
-
-// map: Crea un array con solo i nomi degli studenti.
-
-// forEach: Stampa in console il nome di ogni studente seguito dalla sua età.
-
-// forEach: Calcola la somma totale di tutte le età usando forEach.
-
-// length: Stampa quanti studenti ci sono nell’array.
-
-// length: Stampa quanti voti ha ogni studente (usando studente.voti.length).
-
-// length + filter: Conta quanti studenti frequentano "Informatica".
 
 {
     const studenti = [
@@ -885,22 +866,39 @@
         { nome: "Giulia", eta: 21, corso: "Informatica", voti: [24, 25, 26] }
     ];
 
+    // find: Trova lo studente che ha 22 anni.
+
     const studenteVentidue = studenti.find(studente => studente.eta === 22);
     console.log(studenteVentidue);
+
+    // find: Trova il primo studente che frequenta "Informatica".
+
 
     const studenteInformatica = studenti.find(studente => studente.corso === "Informatica");
     console.log(studenteInformatica);
 
+    // filter: Crea un array con tutti gli studenti di età maggiore o uguale a 21.
+
     const studentiVentuno = studenti.filter(studente => studente.eta >= 21);
     console.log(studentiVentuno);
+
+    // filter: Seleziona solo gli studenti che hanno almeno un 30 nei voti.
 
     const votoTrenta = studenti.filter(studente => studente.voti.some(voto => voto === 30));
     console.log(votoTrenta);
 
+    // map: Crea un array con solo i nomi degli studenti.
+
+
     const nomiStudenti = studenti.map(studente => studente.nome);
     console.log(nomiStudenti);
 
+    // forEach: Stampa in console il nome di ogni studente seguito dalla sua età.
+
+
     studenti.forEach(studente => console.log(studente.nome, studente.eta));
+
+    // forEach: Calcola la somma totale di tutte le età usando forEach.
 
     let som = 0;
 
@@ -911,11 +909,71 @@
 
     console.log(som);
 
+    // length: Stampa quanti studenti ci sono nell’array.
+
+
     console.log(`Numero studenti: ${studenti.length}`);
+
+    // length: Stampa quanti voti ha ogni studente (usando studente.voti.length).
 
     studenti.forEach(studente => console.log(studente.voti.length));
 
+
+    // length + filter: Conta quanti studenti frequentano "Informatica".
+
+
     const numeroUtentiInf = studenti.filter(studente => studente.corso === "Informatica");
     console.log(numeroUtentiInf.length);
+
+    // Scrivi un ciclo for che stampi i nomi di tutti gli studenti.
+
+    for (let i = 0; i < studenti.length; i++) {
+
+        console.log(studenti[i].nome);
+    }
+
+    // Scrivi un ciclo for che calcoli la media delle età degli studenti (usando .length per dividere).
+
+    let somma = 0;
+
+    for (let i = 0; i < studenti.length; i++) {
+        somma += studenti[i].eta
+    }
+
+    const etaMedia = somma / studenti.length
+
+    console.log(etaMedia);
+
+    // Crea una funzione cercaStudente(nome) che restituisca l’oggetto dello studente con quel nome.
+
+    function cercaStudente(nome) {
+        return studenti.find(studente => studente.nome === nome);
+    }
+
+    console.log(cercaStudente("Luca"));
+
+    // Crea una funzione studentiInCorso(corso) che restituisca un array di studenti che frequentano quel corso.
+
+    function studentiInCorso(corso) {
+        return studenti.filter(studente => studente.corso === corso);
+    }
+
+    console.log(studentiInCorso("Fisica"));
+
+    // Crea una funzione stampaStudenti() che stampi in console ogni studente in una riga tipo: Luca - 20 anni - Informatica
+
+    function stampaStudenti() {
+        studenti.forEach(studente => console.log(`${studente.nome}, ${studente.eta} anni, ${studente.corso}`));
+    }
+
+    stampaStudenti()
+
+    // Crea una funzione contaStudenti() che restituisca il numero di studenti (usando .length).
+
+    function contaStudenti() {
+        return studenti.length
+    }
+
+    console.log(contaStudenti())
 
 }

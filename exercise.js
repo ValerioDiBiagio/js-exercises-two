@@ -856,3 +856,23 @@
     const lenghtCityNames = cities.map(city => city.length);
     console.log(lenghtCityNames);
 }
+
+// find: Trova lo studente che ha 22 anni.
+
+// find: Trova il primo studente che frequenta "Informatica".
+
+{
+    const studenti = [
+        { nome: "Luca", eta: 20, corso: "Informatica", voti: [28, 30, 26] },
+        { nome: "Sara", eta: 22, corso: "Matematica", voti: [25, 27, 29] },
+        { nome: "Marco", eta: 19, corso: "Fisica", voti: [30, 30, 28] },
+        { nome: "Giulia", eta: 21, corso: "Informatica", voti: [24, 25, 26] }
+    ];
+
+    const studenteVentidue = studenti.find(studente => studente.eta === 22);
+    console.log(studenteVentidue);
+
+    const studenteInformatica = studenti.find(studente => studente.corso === "Informatica");
+    console.log(studenteInformatica);
+
+}

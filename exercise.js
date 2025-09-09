@@ -861,6 +861,22 @@
 
 // find: Trova il primo studente che frequenta "Informatica".
 
+// filter: Crea un array con tutti gli studenti di età maggiore o uguale a 21.
+
+// filter: Seleziona solo gli studenti che hanno almeno un 30 nei voti.
+
+// map: Crea un array con solo i nomi degli studenti.
+
+// forEach: Stampa in console il nome di ogni studente seguito dalla sua età.
+
+// forEach: Calcola la somma totale di tutte le età usando forEach.
+
+// length: Stampa quanti studenti ci sono nell’array.
+
+// length: Stampa quanti voti ha ogni studente (usando studente.voti.length).
+
+// length + filter: Conta quanti studenti frequentano "Informatica".
+
 {
     const studenti = [
         { nome: "Luca", eta: 20, corso: "Informatica", voti: [28, 30, 26] },
@@ -874,5 +890,32 @@
 
     const studenteInformatica = studenti.find(studente => studente.corso === "Informatica");
     console.log(studenteInformatica);
+
+    const studentiVentuno = studenti.filter(studente => studente.eta >= 21);
+    console.log(studentiVentuno);
+
+    const votoTrenta = studenti.filter(studente => studente.voti.some(voto => voto === 30));
+    console.log(votoTrenta);
+
+    const nomiStudenti = studenti.map(studente => studente.nome);
+    console.log(nomiStudenti);
+
+    studenti.forEach(studente => console.log(studente.nome, studente.eta));
+
+    let som = 0;
+
+    studenti.forEach(studente => {
+
+        som += studente.eta
+    });
+
+    console.log(som);
+
+    console.log(`Numero studenti: ${studenti.length}`);
+
+    studenti.forEach(studente => console.log(studente.voti.length));
+
+    const numeroUtentiInf = studenti.filter(studente => studente.corso === "Informatica");
+    console.log(numeroUtentiInf.length);
 
 }

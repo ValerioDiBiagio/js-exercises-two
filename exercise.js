@@ -993,6 +993,7 @@
         }
     }
 }
+
 // Scrivi una funzione JavaScript chiamata sommaArray che accetta un array di numeri come parametro.
 //  La funzione deve usare un ciclo for standard per iterare su tutti gli elementi dell'array, 
 // calcolare la loro somma totale e restituire il risultato.
@@ -1014,3 +1015,20 @@
     console.log(`la somma totale di questi numeri ${numeri} è ${totale}`);
 }
 
+
+// Scrivi un programma che dichiari un array di numeri, ad esempio const voti = [8, 7, 9, 6, 10]. 
+// Utilizzando un ciclo for, il programma deve calcolare la somma di tutti gli elementi dell'array e poi la media, stampando il risultato finale.
+
+{
+
+    const voti = [8, 7, 9, 6, 10];
+    let somma = 0;
+
+    for (let i = 0; i < voti.length; i++) {
+        somma += voti[i]
+    }
+
+    const mediaVoti = somma / voti.length
+    console.log(`La somma dei voti è: ${somma}`);
+    console.log(`La media dei voti è: ${mediaVoti}`);
+}

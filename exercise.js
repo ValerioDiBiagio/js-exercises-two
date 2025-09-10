@@ -1032,3 +1032,26 @@
     console.log(`La somma dei voti è: ${somma}`);
     console.log(`La media dei voti è: ${mediaVoti}`);
 }
+
+
+// Hai un array di oggetti, dove ogni oggetto rappresenta un prodotto con un nome e un prezzo (senza IVA).
+// Usa il metodo map() per creare un nuovo array di oggetti. Ogni nuovo oggetto deve contenere il nome del prodotto e il suo prezzoTotale 
+// calcolato aggiungendo l'IVA del 22%.
+
+{
+    const prodotti = [
+        { nome: "Laptop", prezzo: 1200 },
+        { nome: "Smartphone", prezzo: 800 },
+        { nome: "Cuffie", prezzo: 150 }
+    ];
+
+    const prodottiConIva = prodotti.map(prodotto => {
+        const prezzoTotale = prodotto.prezzo * 1.22;
+        return {
+            nome: prodotto.nome,
+            prezzoTotale: prezzoTotale
+        };
+    });
+
+    console.log(prodottiConIva);
+}

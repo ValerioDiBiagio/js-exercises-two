@@ -966,7 +966,7 @@
         studenti.forEach(studente => console.log(`${studente.nome}, ${studente.eta} anni, ${studente.corso}`));
     }
 
-    stampaStudenti()
+    stampaStudenti();
 
     // Crea una funzione contaStudenti() che restituisca il numero di studenti (usando .length).
 
@@ -974,6 +974,23 @@
         return studenti.length
     }
 
-    console.log(contaStudenti())
+    console.log(contaStudenti());
 
 }
+
+// Scrivi un programma che utilizzi un ciclo for per iterare da 1 a 20. Ad ogni iterazione, 
+// il programma deve controllare se il numero è pari o dispari e stampare un messaggio appropriato, 
+// come "Il numero 2 è pari" o "Il numero 3 è dispari".
+
+
+{
+    for (let i = 0; i <= 20; i++) {
+        if (i % 2 === 0) {
+            console.log(`il numero ${i} è pari`)
+        }
+        else {
+            console.log(`il numero ${i} è dispari`)
+        }
+    }
+}
+

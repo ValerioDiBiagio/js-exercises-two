@@ -993,4 +993,24 @@
         }
     }
 }
+// Scrivi una funzione JavaScript chiamata sommaArray che accetta un array di numeri come parametro.
+//  La funzione deve usare un ciclo for standard per iterare su tutti gli elementi dell'array, 
+// calcolare la loro somma totale e restituire il risultato.
+
+{
+
+    function sommaArray(arr) {
+        let somma = 0
+
+        for (let i = 0; i < arr.length; i++) {
+            somma += arr[i]
+        }
+
+        return somma
+    }
+
+    const numeri = [5, 10, 15];
+    const totale = sommaArray(numeri);
+    console.log(`la somma totale di questi numeri ${numeri} è ${totale}`);
+}
 

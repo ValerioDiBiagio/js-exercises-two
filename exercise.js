@@ -1055,3 +1055,73 @@
 
     console.log(prodottiConIva);
 }
+
+
+{
+    const products = [
+        { id: "p001", name: "Laptop", category: "Elettronica", price: 1200, inStock: true },
+        { id: "p002", name: "Mouse Wireless", category: "Accessori", price: 25, inStock: false },
+        { id: "p003", name: "Smartphone", category: "Elettronica", price: 800, inStock: true },
+        { id: "p004", name: "Tastiera Meccanica", category: "Accessori", price: 150, inStock: true },
+        { id: "p005", name: "Cuffie Bluetooth", category: "Elettronica", price: 90, inStock: true },
+        { id: "p006", name: "Webcam", category: "Elettronica", price: 65, inStock: false },
+        { id: "p007", name: "Monitor 4K", category: "Elettronica", price: 450, inStock: true }
+    ];
+
+    // 1. Quanti prodotti ci sono nell'array?
+
+    console.log(products.length);
+
+    // 2. Accedi al primo prodotto dell'array.
+
+    console.log(products[0]);
+
+    // 3. Accedi all'ultimo prodotto dell'array.
+
+    console.log(products[products.length - 1]);
+
+    // 4. Accedi al secondo prodotto della lista.
+
+    console.log(products[1]);
+
+    // 5. Crea un array contenente solo i nomi dei prodotti.
+
+    const nomeProdotti = products.map(prodotto => prodotto.name);
+    console.log(nomeProdotti);
+
+    // 6. Crea un array di stringhe descrittive, ad esempio: "Laptop - 1200€" per ogni prodotto.
+
+    const descProdotti = products.map(prodotto => `${prodotto.name} - ${prodotto.price}`);
+    console.log(descProdotti);
+
+    // 7. Ottieni un array di tutti i prodotti che sono al momento disponibili in magazzino.
+
+    const prodDisp = products.filter(prodotto => prodotto.inStock === true);
+    console.log(prodDisp);
+
+    // 8. Ottieni un array di tutti i prodotti della categoria "Elettronica"
+
+    const categProd = products.filter(prodotto => prodotto.category === "Elettronica");
+    console.log(categProd);
+
+    // 9. Ottieni un array di prodotti con un prezzo inferiore a 100€.
+
+    const prezzoInf = products.filter(prodotto => prodotto.price < 100);
+    console.log(prezzoInf);
+
+    // 10. Ottieni un array dei prodotti che non sono "Elettronica" e che sono disponibili in magazzino.
+
+    const prodDispNoElettronica = products.filter(prodotto => prodotto.category !== "Elettronica" && prodotto.inStock === true)
+    console.log(prodDispNoElettronica);
+
+    // 11. Trova l'oggetto del prodotto con l'ID "p004".
+
+    const trovaProd = products.find(prodotto => prodotto.id === "p004");
+    console.log(trovaProd);
+
+    // 12. Trova il primo prodotto che costa meno di 100€ ed è al momento disponibile.
+
+    const prezzoInfProdDisp = products.find(prodotto => prodotto.price < 100 && prodotto.inStock === true);
+    console.log(prezzoInfProdDisp);
+
+}

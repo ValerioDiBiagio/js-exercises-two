@@ -1125,3 +1125,34 @@
     console.log(prezzoInfProdDisp);
 
 }
+
+{
+    const cities = [
+        { name: "Roma", country: "Italia", population: 2873000, area: 1285, rating: 4.8 },
+        { name: "Tokyo", country: "Giappone", population: 13960000, area: 2194, rating: 4.9 },
+        { name: "New York", country: "USA", population: 8419000, area: 783, rating: 4.7 },
+        { name: "Parigi", country: "Francia", population: 2148000, area: 105, rating: 4.8 },
+        { name: "Sydney", country: "Australia", population: 5230000, area: 12368, rating: 4.6 }
+    ];
+    // Stampare i nomi di tutte le città con un ciclo for
+
+    for (let i = 0; i < cities.length; i++) {
+        console.log(cities[i].name);
+    }
+
+    // Stampare nome e paese di tutte le città con un ciclo for
+
+    for (let i = 0; i < cities.length; i++) {
+        console.log(cities[i].name, cities[i].country);
+    }
+
+    // Calcolare la popolazione totale di tutte le città con un ciclo for
+
+    let sum = 0
+
+    for (let i = 0; i < cities.length; i++) {
+        sum += cities[i].population
+    }
+
+    console.log(sum);
+}

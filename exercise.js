@@ -1155,4 +1155,28 @@
     }
 
     console.log(sum);
+
+    // 4. Scrivere una funzione che prende una città e stampa: "La città [name] si trova in [country]"
+
+    function nameCity(city) {
+        console.log(`La città ${city.name} si trova in ${city.country}`);
+    }
+
+    nameCity(cities[1]);
+
+    //  Scrivere una funzione che restituisce un array con i nomi di tutte le città
+
+    function allCities(arr) {
+        return arr.map(city => city.name)
+    }
+
+    console.log(allCities(cities));
+
+    // Scrivere una funzione che filtra le città con rating maggiore o uguale a 4.8
+
+    function maxRatingCity(arr) {
+        return arr.filter(city => city.rating >= 4.8)
+    }
+
+    console.log(maxRatingCity(cities));
 }

@@ -1180,3 +1180,176 @@
 
     console.log(maxRatingCity(cities));
 }
+
+
+{
+
+    const videogames = [
+        { title: "The Legend of Zelda: Breath of the Wild", genre: "avventura", year: 2017, rating: 97, platform: "Nintendo Switch", price: 60 },
+        { title: "God of War", genre: "azione", year: 2018, rating: 94, platform: "PlayStation", price: 50 },
+        { title: "Red Dead Redemption 2", genre: "open-world", year: 2018, rating: 96, platform: "PlayStation", price: 70 },
+        { title: "Minecraft", genre: "sandbox", year: 2011, rating: 93, platform: "Multi", price: 30 },
+        { title: "Elden Ring", genre: "soulslike", year: 2022, rating: 96, platform: "Multi", price: 70 },
+        { title: "Hollow Knight", genre: "metroidvania", year: 2017, rating: 90, platform: "PC", price: 15 },
+        { title: "Fortnite", genre: "battle royale", year: 2017, rating: 85, platform: "Multi", price: 0 },
+        { title: "Super Mario Odyssey", genre: "platform", year: 2017, rating: 97, platform: "Nintendo Switch", price: 60 },
+        { title: "The Witcher 3: Wild Hunt", genre: "rpg", year: 2015, rating: 93, platform: "Multi", price: 40 },
+        { title: "Cyberpunk 2077", genre: "rpg", year: 2020, rating: 75, platform: "Multi", price: 60 }
+    ];
+
+    // LENGTH & ACCESSO
+
+    // 1. Stampare quanti videogiochi ci sono nell’array
+
+    console.log(videogames.length);
+
+    // 2. Stampare il titolo del primo videogioco
+
+    console.log(videogames[0].title);
+
+    // 3. Stampare il titolo e la piattaforma dell’ultimo videogioco
+
+    console.log(videogames[videogames.length - 1].title, videogames[videogames.length - 1].platform);
+
+    // 3b. Stampare il titolo e la piattaforma del penultimo videogioco
+
+    console.log(videogames[videogames.length - 2].title, videogames[videogames.length - 2].platform);
+
+
+    // CICLO FOR
+
+    // 4. Stampare tutti i titoli dei videogiochi
+
+    for (let i = 0; i < videogames.length; i++) {
+        console.log(videogames[i].title);
+    }
+
+    // 5. Calcolare la somma di tutti i prezzi
+
+    let sum = 0;
+
+    for (let i = 0; i < videogames.length; i++) {
+        sum += videogames[i].price
+
+    }
+
+    console.log(sum);
+
+    const media = sum / videogames.length;
+
+    console.log(media);
+
+    // 6. Stampare i videogiochi con rating maggiore di 95
+
+    for (let i = 0; i < videogames.length; i++) {
+        if (videogames[i].rating > 95) {
+            console.log(videogames[i])
+        }
+    }
+
+    // METODI DEGLI ARRAY
+
+    // 7. Creare un array con solo i titoli dei videogiochi
+
+    const gamesTitle = videogames.map(v => v.title);
+    console.log(gamesTitle);
+
+    // 8. Creare un array di frasi tipo: "[title] è un gioco di [genre]"
+
+    const frasi = videogames.map(v => `${v.title} è un gioco di ${v.genre}`);
+    console.log(frasi);
+
+    // 9. Ottenere tutti i giochi per piattaforma "Nintendo Switch"
+
+    const nintendo = videogames.filter(v => v.platform === "Nintendo Switch");
+    console.log(nintendo);
+
+    // 10. Ottenere tutti i giochi con prezzo <= 50
+
+    const prezzoInf = videogames.filter(v => v.price <= 50);
+    console.log(prezzoInf);
+
+    // 11. Ottenere solo i giochi del genere "rpg"
+
+    const genere = videogames.filter(v => v.genre === "rpg");
+    console.log(genere);
+
+    // 12. Trovare il primo gioco con rating >= 95
+
+    const rating = videogames.find(v => v.rating >= 95);
+    console.log(rating);
+
+    // 13. Trovare il gioco chiamato "Minecraft"
+
+    const nome = videogames.find(v => v.title === "Minecraft");
+    console.log(nome);
+
+    // 14. Stampare per ogni videogioco: "[title] costa [price] €"
+
+    videogames.forEach(v => console.log(`${v.title} costa ${v.price}`));
+
+    // 15. Stampare solo i titoli in maiuscolo
+
+    videogames.forEach(v => console.log(v.title.toLocaleUpperCase()));
+
+
+
+    // FUNZIONI / MISTI
+
+    // 16. Scrivere una funzione che restituisce il prezzo medio dei videogiochi
+
+    function prezzoMedio(arr) {
+
+        const somma = arr.reduce((tot, acc) => tot + acc.price, 0);
+        const media = somma / arr.length
+
+        return media
+    }
+
+    console.log(prezzoMedio(videogames));
+
+    // 17. Scrivere una funzione che restituisce un array con i titoli dei giochi usciti dopo il 2015
+
+    function titoliGiochi(arr) {
+        return giochiUsciti2015 = arr.filter(v => v.year > 2015)
+    }
+
+    console.log(titoliGiochi(videogames));
+
+    // 18. Scrivere una funzione che restituisce il titolo del gioco più costoso
+
+    function giocoCostoso(arr) {
+
+        let giocoPiuCostoso = arr[0];
+
+        for (let i = 0; i < arr.length; i++) {
+
+            if (arr[i].price > giocoPiuCostoso.price) return giocoPiuCostoso;
+
+        }
+    }
+
+    console.log(giocoCostoso(videogames));
+
+    // 19. Stampare con forEach solo i giochi con rating >= 95
+
+    const giochiFiltrati = videogames.filter(v => v.rating >= 95);
+    giochiFiltrati.forEach(v => console.log(v));
+
+    // 20. Creare un array di stringhe tipo: "[title] ([genre]) – [year]"
+
+    const arrStringe = videogames.map(v => `${v.title} (${v.genre}) - ${v.year}`);
+    console.log(arrStringe);
+
+
+
+
+
+
+
+
+
+
+
+
+}

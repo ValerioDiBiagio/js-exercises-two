@@ -1341,15 +1341,111 @@
     const arrStringe = videogames.map(v => `${v.title} (${v.genre}) - ${v.year}`);
     console.log(arrStringe);
 
+}
 
 
+{
+    const books = [
+        { title: "The Great Gatsby", author: "F. Scott Fitzgerald", year: 1925, genre: "Fiction", rating: 88, price: 10 },
+        { title: "1984", author: "George Orwell", year: 1949, genre: "Dystopian", rating: 92, price: 15 },
+        { title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960, genre: "Fiction", rating: 95, price: 12 },
+        { title: "Pride and Prejudice", author: "Jane Austen", year: 1813, genre: "Romance", rating: 90, price: 8 },
+        { title: "Moby Dick", author: "Herman Melville", year: 1851, genre: "Adventure", rating: 85, price: 20 },
+        { title: "War and Peace", author: "Leo Tolstoy", year: 1869, genre: "Historical", rating: 93, price: 25 },
+        { title: "The Catcher in the Rye", author: "J.D. Salinger", year: 1951, genre: "Fiction", rating: 85, price: 18 },
+        { title: "The Hobbit", author: "J.R.R. Tolkien", year: 1937, genre: "Fantasy", rating: 96, price: 14 },
+        { title: "The Lord of the Rings", author: "J.R.R. Tolkien", year: 1954, genre: "Fantasy", rating: 98, price: 35 },
+        { title: "The Book Thief", author: "Markus Zusak", year: 2005, genre: "Historical", rating: 90, price: 16 }
+    ];
 
 
+    // Usa un ciclo for per stampare tutti i titoli dei libri.
 
+    for (let i = 0; i < books.length; i++) {
+        console.log(books[i].title);
+    }
 
+    // Usa un ciclo for per sommare il prezzo di tutti i libri.
 
+    let sum = 0;
+    for (let i = 0; i < books.length; i++) {
+        sum += books[i].price
 
+    }
 
+    console.log(sum);
 
+    // Usa un ciclo for per trovare e stampare i libri pubblicati prima del 1900.
 
+    for (let i = 0; i < books.length; i++) {
+        if (books[i].year < 1900) {
+            console.log(books[i]);
+        }
+    }
+
+    // Stampare l’autore di ogni libro
+
+    books.forEach(book => console.log(book.author));
+
+    // Creare un array con solo i titoli dei libri
+
+    const author = books.map(book => book.author);
+    console.log(author);
+
+    // Filtrare i libri con rating >= 90
+
+    const ratingBooks = books.filter(book => book.rating >= 90);
+    console.log(ratingBooks);
+
+    // 7. Trova il primo libro con rating 95
+
+    const findBooks = books.find(book => book.rating === 95);
+    console.log(findBooks);
+
+    // 8. Creare una frase del tipo "[title] è un libro di [author]"
+
+    const phrase = books.map(book => `${book.title} è un libro di ${book.author}`);
+    console.log(phrase);
+
+    // 9. Ottenere solo i libri del genere "Fantasy"
+
+    const fantasyBooks = books.filter(book => book.genre === "Fantasy");
+    console.log(fantasyBooks);
+
+    // 10. Trovare un libro specifico (ad esempio "Moby Dick")
+
+    const specificBook = books.find(book => book.title === "Moby Dick");
+    console.log(specificBook);
+
+    // 11. Stampare il titolo e il prezzo di ogni libro
+
+    books.forEach(book => console.log(`Titolo: ${book.title} Prezzo: ${book.price} €`));
+
+    // 12. Creare un array con solo gli anni di pubblicazione dei libri
+
+    const yearsBook = books.map(book => book.year);
+    console.log(yearsBook);
+
+    // 13. Accesso al primo elemento – Stampare il titolo del primo libro
+    console.log(books[0].title);
+
+    // 14. Accesso all'ultimo elemento – Stampare il titolo dell'ultimo libro
+
+    console.log(books[books.length - 1].title);
+
+    // 15. Stampare la lunghezza dell'array – Stampare quanti libri ci sono nell'array
+
+    console.log(books.length)
+
+    // 16. Accesso al penultimo elemento – Stampare il titolo e l'autore del penultimo libro
+
+    console.log(books[books.length - 2].title, books[books.length - 2].author)
+
+    // 17. Verifica se l'array è vuoto –  Verifica se l'array è vuoto e stampare un messaggio appropriato.
+
+    if (books.length === 0) {
+        console.log("L'array è vuoto.");
+    } else {
+        console.log("L'array non è vuoto.");
+    }
 }

@@ -1449,3 +1449,91 @@
         console.log("L'array non è vuoto.");
     }
 }
+
+
+{
+    const viaggi = [
+        { id: 1, destinazione: "Parigi", durata: 5, prezzo: 750, compagnia: "Air France" },
+        { id: 2, destinazione: "Roma", durata: 3, prezzo: 500, compagnia: "Alitalia" },
+        { id: 3, destinazione: "Tokyo", durata: 10, prezzo: 1500, compagnia: "Japan Airlines" },
+        { id: 4, destinazione: "New York", durata: 7, prezzo: 1200, compagnia: "Delta" },
+        { id: 5, destinazione: "Sydney", durata: 12, prezzo: 1800, compagnia: "Qantas" },
+        { id: 6, destinazione: "Londra", durata: 4, prezzo: 700, compagnia: "British Airways" },
+    ];
+
+
+    // Usa un ciclo for per stampare tutte le destinazioni dei viaggi.
+
+    for (let i = 0; i < viaggi.length; i++) {
+        console.log(viaggi[i].destinazione);
+    }
+
+    // Stampare il prezzo di ogni viaggio.
+
+    viaggi.forEach(v => console.log(v.prezzo));
+
+    // Creare un array di tutte le destinazioni dei viaggi.
+
+    const destViaggi = viaggi.map(v => v.destinazione)
+    console.log(destViaggi);
+
+    // Ottenere tutti i viaggi che costano meno di 1000 euro.
+
+    const viaggiEcon = viaggi.filter(v => v.prezzo < 1000);
+    console.log(viaggiEcon);
+
+    // Trovare il primo viaggio con durata maggiore di 10 giorni.
+
+    const durViaggio = viaggi.find(v => v.durata > 10);
+    console.log(durViaggio);
+
+    // Calcola la somma totale dei prezzi di tutti i viaggi usando un ciclo for.
+
+    let som = 0;
+    for (let i = 0; i < viaggi.length; i++) {
+
+        som += viaggi[i].prezzo
+
+    }
+
+    console.log(som);
+
+    // Creare un array solo delle compagnie aeree dei viaggi.
+
+    const compAeree = viaggi.map(v => v.compagnia);
+    console.log(compAeree);
+
+    // Stampare una frase per ogni viaggio:"Parigi dura 5 giorni e costa 750 euro."
+
+    viaggi.forEach(v => console.log(`${v.destinazione} dura ${v.durata} e costa ${v.prezzo} euro`))
+
+    // Scrivi una funzione che prende il nome di una destinazione e usa find per restituire l’oggetto viaggio corrispondente.
+
+    function trovaCitta(city) {
+        return viaggi.find(v => v.destinazione === city)
+    }
+
+    console.log(trovaCitta("Roma"))
+
+    // Creare un array con i viaggi che durano più di 5 giorni e poi ottenere solo le destinazioni.
+
+    const viaggiLunghi = viaggi.filter(v => v.durata > 5);
+    console.log(viaggiLunghi);
+
+    const soloDest = viaggiLunghi.map(v => v.destinazione);
+    console.log(soloDest);
+
+    // Conta quanti viaggi durano meno di 6 giorni usando filter e la proprietà length.
+
+    const viaggiCorti = viaggi.filter(v => v.durata < 6)
+    console.log(viaggiCorti.length);
+
+    // Scrivi una funzione che restituisce un nuovo array contenente solo le destinazioni dei viaggi il cui prezzo è maggiore di 1000 euro.
+
+    function destEconomiche(arr) {
+        return arr.filter(v => v.prezzo > 1000);
+
+    }
+
+    console.log(destEconomiche(viaggi));
+}

@@ -1536,4 +1536,50 @@
     }
 
     console.log(destEconomiche(viaggi));
+
+    // Accedi al primo viaggio nell'array e stampa la sua destinazione
+
+    console.log(viaggi[0].destinazione);
+
+    //  Accedi all'ultimo viaggio nell'array e stampa la sua destinazione
+
+    console.log(viaggi[viaggi.length - 1].destinazione);
+
+    // Accedi al penultimo viaggio nell'array e stampa la sua destinazione
+
+    console.log(viaggi[viaggi.length - 2].destinazione);
+
+    // Accedi al terzo viaggio nell'array e stampa la sua durata
+
+    console.log(viaggi[2].durata);
+
+    // Calcola il totale della durata di tutti i viaggi
+
+    const durataTot = viaggi.reduce((tot, acc) => tot + acc.durata, 0);
+    console.log(durataTot);
+
+    // Calcolare il prezzo medio dei viaggi
+
+    let sum = 0;
+    for (let i = 0; i < viaggi.length; i++) {
+
+        sum += viaggi[i].prezzo
+    }
+
+    console.log(sum)
+
+    const mediaPrezzo = sum / viaggi.length;
+    console.log(mediaPrezzo);
+
+
+    // Calcolare la somma totale dei prezzi dei viaggi
+
+    const totPrezzi = viaggi.reduce((tot, acc) => tot + acc.prezzo, 0);
+    console.log(totPrezzi);
+
+    //  Contare quanti viaggi hanno durata maggiore di 7 giorni
+
+    const durataMaggSette = viaggi.filter(v => v.durata > 7);
+    console.log(durataMaggSette.length);
+
 }

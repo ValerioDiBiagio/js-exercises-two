@@ -1583,3 +1583,126 @@
     console.log(durataMaggSette.length);
 
 }
+
+{
+    const foods = [
+        { name: "Pizza Margherita", type: "Italian", calories: 850, price: 8, rating: 92 },
+        { name: "Sushi Mix", type: "Japanese", calories: 600, price: 15, rating: 95 },
+        { name: "Cheeseburger", type: "American", calories: 900, price: 7, rating: 85 },
+        { name: "Paella", type: "Spanish", calories: 750, price: 12, rating: 90 },
+        { name: "Croissant", type: "French", calories: 300, price: 3, rating: 88 },
+        { name: "Pad Thai", type: "Thai", calories: 700, price: 10, rating: 91 },
+        { name: "Falafel", type: "Middle Eastern", calories: 400, price: 6, rating: 89 },
+        { name: "Tacos", type: "Mexican", calories: 500, price: 5, rating: 87 },
+        { name: "Ramen", type: "Japanese", calories: 550, price: 9, rating: 93 },
+        { name: "Gelato", type: "Italian", calories: 250, price: 4, rating: 94 }
+    ];
+
+    // Usa un ciclo for per stampare tutti i nomi dei cibi.
+
+    for (let i = 0; i < foods.length; i++) {
+        console.log(foods[i].name);
+    }
+
+    // Usa un ciclo for per sommare tutte le calorie e stampare il totale.
+
+    let som = 0;
+
+    for (let i = 0; i < foods.length; i++) {
+        som += foods[i].calories
+    }
+
+    console.log(som);
+
+    // Usa un ciclo for per stampare i cibi che costano più di 10€.
+
+    for (let i = 0; i < foods.length; i++) {
+        if (foods[i].price > 10) {
+            console.log(foods[i].name)
+        }
+    }
+
+    // Stampare il tipo di ogni cibo.
+
+    foods.forEach(f => console.log(f.type));
+
+    // Crea un array con solo i nomi.
+
+    const nome = foods.map(f => f.name);
+    console.log(nome);
+
+    // Ottieni i cibi con rating >= 90.
+
+    const rating = foods.filter(f => f.rating >= 90);
+    console.log(rating);
+
+    // Ottieni il primo cibo con meno di 400 calorie.
+
+    const menoCalorie = foods.find(f => f.calories < 400);
+    console.log(menoCalorie);
+
+    // Crea un array di frasi del tipo "[name] è un piatto [type]".
+
+    const frasi = foods.map(f => `${f.name} è un piatto ${f.type}`);
+    console.log(frasi);
+
+    // Ottieni solo i cibi giapponesi.
+
+    const piattiGiap = foods.filter(f => f.type === "Japanese");
+    console.log(piattiGiap);
+
+    // Cerca  un cibo specifico (es. "Gelato").
+
+    const ciboSpec = foods.find(f => f.name === "Gelato");
+    console.log(ciboSpec);
+
+    // Stampa nome e prezzo di ogni cibo.
+
+    foods.forEach(f => console.log(f.name, f.price));
+
+    // Crea un array con solo le calorie.
+
+    const calorie = foods.map(f => f.calories);
+    console.log(calorie);
+
+    // Calcola la somma totale dei prezzi di tutti i cibi.
+
+    const sommaPrezzi = foods.reduce((tot, acc) => tot + acc.price, 0);
+    console.log(sommaPrezzi);
+
+    // Stampa il nome del primo cibo.
+
+    console.log(foods[0].name);
+
+    // Stampa il nome dell’ultimo cibo.
+
+    console.log(foods[foods.length - 1].name);
+
+    // Stampa quanti cibi ci sono nell’array.
+
+    console.log(foods.length);
+
+    // Stampa nome e tipo del penultimo cibo.
+
+    console.log(foods[foods.length - 2].name, foods[foods.length - 2].type);
+
+    // Crea un array con i nomi dei cibi con calorie < 600.
+
+    const calorieCibo = foods.filter(f => f.calories < 600).map(f => f.name);
+    console.log(calorieCibo);
+
+    // Seleziona i cibi italiani stampa frasi tipo: "Il piatto [name] costa [price]€".
+
+    const cibiIta = foods.filter(f => f.type === "Italian");
+    cibiIta.forEach(f => console.log(`Il piatto ${f.name} costa ${f.price} €`));
+
+    // Stampa solo i nomi dei cibi con rating >= 90 e prezzo <= 10€.
+
+    const ratingAlto = foods.filter(f => f.rating >= 90 && f.price <= 10);
+    ratingAlto.forEach(f => console.log(f.name));
+
+
+
+
+
+}
